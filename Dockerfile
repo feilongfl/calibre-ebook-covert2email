@@ -12,6 +12,7 @@ RUN apt-get update \
     && apt-get install -y \
         build-essential \
         curl \
+        mailutils \
     && apt-get install -y \
         git-core \
     && apt-get clean
