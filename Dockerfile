@@ -19,3 +19,8 @@ RUN apt-get update \
 # Install calibre
 RUN sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
+RUN wget https://github.com/feilongfl/docker-rdp-calibre/raw/master/News.recipe 
+RUN wget https://github.com/feilongfl/docker-rdp-calibre/raw/master/News.aws.recipe
+
+
+
