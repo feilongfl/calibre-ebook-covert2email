@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.2
+FROM nicescale/sendmail
 
 # Install calibre deps and then nodejs deps
 RUN apt-get update \
@@ -12,7 +12,6 @@ RUN apt-get update \
     && apt-get install -y \
         build-essential \
         curl \
-        mailutils \
     && apt-get install -y \
         git-core \
     && apt-get clean
