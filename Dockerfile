@@ -16,6 +16,7 @@ RUN apt-get update \
         tmux \
     && apt-get install -y \
         git-core \
+        ttf-wqy-microhei \
     && apt-get clean
 
 # Install calibre
