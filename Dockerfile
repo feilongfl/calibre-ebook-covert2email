@@ -1,4 +1,4 @@
-FROM nicescale/sendmail
+FROM ubuntu
 
 # Install calibre deps and then nodejs deps
 RUN apt-get update \
